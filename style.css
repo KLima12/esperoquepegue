@@ -1,0 +1,76 @@
+body {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #ff0000, #ff69b4);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* .container {
+    padding: 20px;
+}*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    background-color: pink;
+    
+    
+}
+
+header h1 {
+    color: #81721e;;
+}
+
+h1 {
+    color: white;
+}
+
+
+
+main{
+    text-align: center;
+    margin-top: 20px;
+}
+
+main h3{
+    color: white;
+    margin-top: 10px;
+}
+
+
+#sim{
+    font-size: 24px;
+    color: #333;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 140px;
+   
+}
+
+#nao {
+    
+    font-size: 24px;
+    color: #333;
+    background-color: red;
+    margin-left: 15px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+}
+
+#imagemPrincipal{
+    margin-top: 30px;
+    width: 500px;
+    height: 300px;
+}
+
+/*#333*/
