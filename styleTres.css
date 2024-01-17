@@ -1,0 +1,38 @@
+body {
+  background-color: #000;
+  margin: 0;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  color: red;
+}
+
+#canvas {
+  display: none; /* Inicia oculto */
+}
+
+#audioPlayer {
+  display: none; /* Inicia oculto */
+}
+
+button{
+  background-color: red;
+  color: black;
+  margin: 0;
+  text-align: center;
+  align-items: center;
+  padding: 40px;
+}
+
+#mensagemH1{
+  text-align: center;
+  margin-top: -550px;
+  align-items: center;
+  margin-left: 40px;
+}

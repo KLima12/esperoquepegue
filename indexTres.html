@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Café codificado</title>
+  <link rel="stylesheet" href="./styleTres.css">
+  <link rel="shortcut icon" href="417379736_335935812623565_5182264552206576502_n.heic" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+
+  
+    <h1 id="mensagemH1"></h1>
+    <button onclick="mostrarMensagem()" id="startButton">Clique aqui</button>
+ 
+  
+  <audio id="audioPlayer" loop>
+    <source src="360ytmp3.com_128kbps-christina-perri-a-thousand-years-official-music-video.mp3" type="audio/mp3">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+
+  <!-- O resto do seu código HTML -->
+ 
+  <canvas id="canvas" width="1400" height="600"></canvas>
+  <!-- O resto do seu código HTML -->
+</body>
+
+<script>
+  
+ document.addEventListener("DOMContentLoaded", function () {
+    var audio = document.getElementById("audioPlayer");
+    var startButton = document.getElementById("startButton");
+    var canvas = document.getElementById("canvas");
+    var mensagem = "Confirmado! Te vejo lá ❤"
+    var h1Element = document.querySelector("h1");
+
+    startButton.addEventListener("click", function () {
+      event.preventDefault();
+     
+
+      // Mostrar a animação e a música
+      audio.style.display = "block";
+      canvas.style.display = "block";
+
+     
+
+    // Modificar a margem do h1
+   
+      // Iniciar a reprodução da música
+      if (audio.paused) {
+
+        audio.play();
+      }
+  
+      // Ocultar o botão após iniciar
+      startButton.style.display = "none";
+    });
+  });
+  
+  /*document.addEventListener("DOMContentLoaded", function () {
+    var audio = document.getElementById("audioPlayer");
+    var startButton = document.getElementById("startButton");
+    var canvas = document.getElementById("canvas");
+    
+    var h1Element = document.querySelector("h1");
+  
+    // Função para iniciar a música
+    function iniciarMusica() {
+      // Mostrar a animação e a música
+      audio.style.display = "block";
+      canvas.style.display = "block";
+  
+      // Iniciar a reprodução da música
+      if (audio.paused) {
+        audio.play();
+      }
+  
+      // Ocultar o botão após iniciar
+      startButton.style.display = "none";
+    }
+  
+    // Função para mostrar a mensagem e ajustar estilos
+    function mostrarMensagem() {
+      // Atualizar o conteúdo e estilizar o h1
+      var mensagem = "Confirmado! Te vejo lá ❤";
+      h1Element.innerText = mensagem;
+      h1Element.style.margin = "20px";
+    }
+  
+    // Atribuir as funções aos eventos onclick
+    startButton.addEventListener("click", function (event) {
+      event.preventDefault();
+      iniciarMusica();
+      mostrarMensagem();
+    });
+  });*/
+
+  /*function mostrarMensagem(){
+    var mensagem = "Confirmado! Te vejo lá ❤";
+    var h1Element = document.querySelector("h1");
+    h1Element.innerText = mensagem;
+  
+    var startButton = document.getElementById("startButton");
+
+  if (h1Element) {
+    h1Element.innerText = mensagem;
+    h1Element.style.margin = "20px";
+
+    // Ocultar o botão
+    startButton.style.display = "none";
+  } else {
+    console.error("Elemento com ID 'mensagemH1' não encontrado.");
+  }
+  }*/
+
+ 
+  
+
+</script>
+
+
+  <script  src="./scriptTres.js"></script>
+
+</body>
+</html>
